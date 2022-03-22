@@ -21,23 +21,15 @@ int main()
 std::cout<<std::fixed<<std::setw(2)<<"No"<< "\t"<< std::setw(8) << "valor C"<< "\t"<<"\t"<<"[x raiz+]" << "\t"<<"\t"<< "[x raiz-]"<< "\t"<< "[x' raiz+]"<<"\t"<< "\t"<< "[x' raiz-]"<< "\n";
 
   
-  for(int ii = 0.0; ii <= 10.0; ++ii)
+  for(int ii = 1.0; ii <= 10.0; ++ii)
     {
       cons= (std::pow(10.0,-ii));
       result1= F1(ii);
       resultf1=f1(ii);
       result2= F2(ii);
       resultf2= f2(ii);
-    if (ii==0.0){
-
-      
-       std::cout<<std::fixed<<std::setw(2)<<ii<< "\t"<< std::setw(8)<<std::setprecision(6)  <<  std::setfill('0') << cons<< "\t"<<"\t"<<"complejo" << "\t"<<"\t"<< "complejo"<< "\t"<< "complejo"<<"\t"<<"\t"<< "complejo"<< "\n";
-    }
-      
-      else{
-        std::cout<<std::fixed<<std::setw(2)<<ii<< "\t"<< std::setw(8)<<std::setprecision(6)  <<  std::setfill('0') << cons<< "\t"<<"\t"<<result1 << "\t"<<"\t"<< resultf1<< "\t"<< result2<<"\t"<<"\t"<< resultf2<< "\n";
-      }
     
+    std::cout<<std::fixed<<std::setw(2)<<ii<< "\t"<< std::setw(8)<<std::setprecision(6)  <<  std::setfill('0') << cons<< "\t"<<"\t"<<result1 << "\t"<<"\t"<< resultf1<< "\t"<< result2<<"\t"<<"\t"<< resultf2<< "\n";
     }
   return 0;
 }
